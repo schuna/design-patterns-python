@@ -6,3 +6,4 @@ build
 *.egg-info
 test-reports
 .idea
+coverage.xml
