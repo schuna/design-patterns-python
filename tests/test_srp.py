@@ -6,7 +6,6 @@ from src.design_patterns.solid.srp import Journal, PersistenceManager
 
 
 class TestPersistenceManager(TestCase):
-
     def setUp(self) -> None:
         self.journal = Journal()
         self.journal.add_entry("Journal")
@@ -26,17 +25,16 @@ class TestJournal(TestCase):
         self.journal.add_entry("Journal #1")
         self.journal.add_entry("Journal #2")
 
-    @parameterized.expand([
-        (0, "1: Journal #2"),
-        (1, "0: Journal #1")
-    ])
+    @parameterized.expand([(0, "1: Journal #2"), (1, "0: Journal #1")])
     def test_remove_entry_called_valid_then_remove_selected(self, pos, expected):
         self.journal.remove_entry(pos)
         self.assertEqual(expected, str(self.journal))
 
-    @parameterized.expand([
-        (2, ValueError),
-    ])
+    @parameterized.expand(
+        [
+            (2, ValueError),
+        ]
+    )
     def test_remove_entry_called_invalid_then_raise_exception(self, pos, exception):
         with self.assertRaises(exception):
             self.journal.remove_entry(pos)

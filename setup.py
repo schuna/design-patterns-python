@@ -17,7 +17,7 @@ setup(
     url="",
     author="jiyong.lee",
     author_email="jiyong1972@gmail.com",
-    license='MIT',
+    license="MIT",
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
