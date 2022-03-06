@@ -17,7 +17,6 @@ class Machine:
 
 
 class MultiFunctionPrinter(Machine):
-
     def print(self, document):
         return f"print {document}"
 
@@ -29,7 +28,6 @@ class MultiFunctionPrinter(Machine):
 
 
 class OldFashionedPrinter(Machine):
-
     def print(self, document):
         return f"print {document}"
 
@@ -58,13 +56,11 @@ class Scanner:
 
 
 class MyPrinter(Printer):
-
     def print(self, document):
         return f"print {document}"
 
 
 class Photocopier(Printer, Scanner):
-
     def print(self, document):
         return f"print {document}"
 

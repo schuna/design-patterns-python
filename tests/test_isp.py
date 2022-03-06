@@ -1,7 +1,12 @@
 from unittest import TestCase
 
-from src.design_patterns.solid.isp import MultiFunctionPrinter, OldFashionedPrinter, MyPrinter, Photocopier, \
-    MultiFunctionMachine
+from src.design_patterns.solid.isp import (
+    MultiFunctionPrinter,
+    OldFashionedPrinter,
+    MyPrinter,
+    Photocopier,
+    MultiFunctionMachine,
+)
 
 
 class TestMultiFunctionPrinter(TestCase):

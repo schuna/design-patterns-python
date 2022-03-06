@@ -6,10 +6,12 @@ from src.design_patterns.proxy.virtual import Bitmap, LazyBitmap
 
 
 class TestVirtualProxy(TestCase):
-    @parameterized.expand([
-        (Bitmap("flower.png"), "Drawing image flower"),
-        (LazyBitmap("flower.png"), "Drawing image flower")
-    ])
+    @parameterized.expand(
+        [
+            (Bitmap("flower.png"), "Drawing image flower"),
+            (LazyBitmap("flower.png"), "Drawing image flower"),
+        ]
+    )
     def test_draw_when_called_return_drawing_image_name(self, bitmap, expected):
         bitmap.draw()
         actual = bitmap.draw()
