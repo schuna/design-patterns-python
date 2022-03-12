@@ -17,20 +17,7 @@ class Journal:
         return "\n".join(self.entries)
 
     # break SRP
-    # def save(self, filename):
-    #     file = open(filename, "w")
-    #     file.write(str(self))
-    #     file.close()
-    #
-    # def load(self, filename):
-    #     pass
-    #
-    # def load_from_web(self, url):
-    #     pass
-
-
-class PersistenceManager:
-    @staticmethod
-    def save_to_file(journal, filename):
-        with open(filename, "w") as wf:
-            wf.write(str(journal))
+    def save(self, filename):
+        file = open(filename, "w")
+        file.write(str(self))
+        file.close()
