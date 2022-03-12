@@ -7,13 +7,13 @@ ISP Violated
 
 class Machine:
     def print(self, document):
-        raise NotImplementedError
+        raise NotImplementedError  # pragma: no cover
 
     def fax(self, document):
-        raise NotImplementedError
+        raise NotImplementedError  # pragma: no cover
 
     def scan(self, document):
-        raise NotImplementedError
+        raise NotImplementedError  # pragma: no cover
 
 
 class MultiFunctionPrinter(Machine):
@@ -46,13 +46,13 @@ follow ISP
 class Printer:
     @abstractmethod
     def print(self, document):
-        raise NotImplementedError
+        raise NotImplementedError  # pragma: no cover
 
 
 class Scanner:
     @abstractmethod
     def scan(self, document):
-        raise NotImplementedError
+        raise NotImplementedError  # pragma: no cover
 
 
 class MyPrinter(Printer):
@@ -71,11 +71,11 @@ class Photocopier(Printer, Scanner):
 class MultiFunctionDevice(Printer, Scanner):
     @abstractmethod
     def print(self, document):
-        raise NotImplementedError
+        raise NotImplementedError  # pragma: no cover
 
     @abstractmethod
     def scan(self, document):
-        raise NotImplementedError
+        raise NotImplementedError  # pragma: no cover
 
 
 class MultiFunctionMachine(MultiFunctionDevice):
