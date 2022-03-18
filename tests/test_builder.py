@@ -1,7 +1,7 @@
 from unittest import TestCase
 
-from src.design_patterns.builder.html_builder import HtmlBuilder
-from src.design_patterns.builder.html_element import HtmlElement
+from design_patterns.builder.html_builder import HtmlBuilder
+from design_patterns.builder.html_element import HtmlElement
 
 
 class TestHtmlBuilder(TestCase):

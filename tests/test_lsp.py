@@ -2,8 +2,8 @@ from unittest import TestCase
 
 from parameterized import parameterized
 
-from src.design_patterns.solid.lsp.rectangle import SquareViolateLSP, Rectangle, Square
-from src.design_patterns.solid.lsp.email_broadcaster import (
+from design_patterns.solid.lsp.rectangle import SquareViolateLSP, Rectangle, Square
+from design_patterns.solid.lsp.email_broadcaster import (
     Account,
     User,
     SubscribedUser,

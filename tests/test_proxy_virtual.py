@@ -2,7 +2,7 @@ from unittest import TestCase
 
 from parameterized import parameterized
 
-from src.design_patterns.proxy.virtual import Bitmap, LazyBitmap
+from design_patterns.proxy.virtual import Bitmap, LazyBitmap
 
 
 class TestVirtualProxy(TestCase):

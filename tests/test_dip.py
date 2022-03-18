@@ -1,6 +1,6 @@
 from unittest import TestCase
 
-from src.design_patterns.solid.dip import (
+from design_patterns.solid.dip import (
     ResearchViolateDIP,
     Person,
     Relationships,

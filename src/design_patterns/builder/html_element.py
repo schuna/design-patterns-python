@@ -1,4 +1,4 @@
-from src.design_patterns.builder.html_builder import HtmlBuilder
+from design_patterns.builder.html_builder import HtmlBuilder
 
 
 class HtmlElement:

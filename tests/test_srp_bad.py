@@ -1,8 +1,10 @@
 import os
+from tempfile import TemporaryDirectory
 from unittest import TestCase
+
 from parameterized import parameterized
-from src.design_patterns.solid.srp_bad.journal import Journal
-from tempfile import TemporaryDirectory, TemporaryFile
+
+from design_patterns.solid.srp_bad.journal import Journal
 
 
 class TestJournal(TestCase):
@@ -10,6 +12,10 @@ class TestJournal(TestCase):
         self.journal = Journal()
         self.journal.add_entry("Journal #1")
         self.journal.add_entry("Journal #2")
+        self.temp_dir = TemporaryDirectory()
+
+    def tearDown(self) -> None:
+        self.temp_dir.cleanup()
 
     @parameterized.expand([(0, "1: Journal #2"), (1, "0: Journal #1")])
     def test_remove_entry_called_valid_then_remove_selected(self, pos, expected):
@@ -26,8 +32,7 @@ class TestJournal(TestCase):
             self.journal.remove_entry(pos)
 
     def test_save_when_called_save_journal(self):
-        temp_dir = TemporaryDirectory()
-        temp_file = os.path.join(temp_dir.name, "output.txt")
+        temp_file = os.path.join(self.temp_dir.name, "output.txt")
         self.journal.save(temp_file)
         actual = self.read_file(temp_file)
 

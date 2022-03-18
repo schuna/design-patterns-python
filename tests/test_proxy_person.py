@@ -2,7 +2,7 @@ from unittest import TestCase
 
 from parameterized import parameterized
 
-from src.design_patterns.proxy.person import ResponsiblePerson, Person
+from design_patterns.proxy.person import ResponsiblePerson, Person
 
 
 class TestResponsiblePerson(TestCase):

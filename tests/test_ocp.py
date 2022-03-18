@@ -1,7 +1,7 @@
 from unittest import TestCase
 from parameterized import parameterized
 
-from src.design_patterns.solid.ocp import (
+from design_patterns.solid.ocp import (
     Product,
     Color,
     Size,

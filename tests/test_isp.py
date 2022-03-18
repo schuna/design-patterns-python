@@ -1,6 +1,6 @@
 from unittest import TestCase
 
-from src.design_patterns.solid.isp import (
+from design_patterns.solid.isp import (
     MultiFunctionPrinter,
     OldFashionedPrinter,
     MyPrinter,

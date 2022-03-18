@@ -2,7 +2,7 @@ from unittest import TestCase
 
 from parameterized import parameterized
 
-from src.design_patterns.proxy.protection import Driver, Car, CarProxy
+from design_patterns.proxy.protection import Driver, Car, CarProxy
 
 
 class TestProtectionProxy(TestCase):
