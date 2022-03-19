@@ -7,3 +7,5 @@ build
 test-reports
 .idea
 coverage.xml
+htmlcov
+test-reports
