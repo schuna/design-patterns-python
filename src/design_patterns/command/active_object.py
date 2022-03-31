@@ -22,7 +22,7 @@ class ActiveObject:
 
     def run(self):
         while len(self.command_queue):
-            command = self.command_queue.pop()
+            command = self.command_queue.pop(0)
             command.execute()
 
 
@@ -49,3 +49,4 @@ class SleepCommand(Command):
 class WakeupCommand(Command):
     def execute(self):
         print("Command Executed!")
+
