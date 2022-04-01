@@ -1,7 +1,7 @@
 import sys
 
 
-def main():
+def convert_fahrenheit_celsius():
     done = False
 
     while not done:
@@ -32,5 +32,5 @@ def number_from_input_stream():
         return None
 
 
-if __name__ == '__main__':
-    main()
+if __name__ == '__main__':  # pragma: no cover
+    convert_fahrenheit_celsius()

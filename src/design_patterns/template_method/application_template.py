@@ -11,11 +11,11 @@ class Application(metaclass=ABCMeta):
 
     @abstractmethod
     def idle(self):
-        raise NotImplementedError
+        raise NotImplementedError  # pragma: no cover
 
     @abstractmethod
     def cleanup(self):
-        raise NotImplementedError
+        raise NotImplementedError  # pragma: no cover
 
     def set_done(self):
         self.done = True

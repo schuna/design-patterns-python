@@ -2,7 +2,7 @@ from design_patterns.template_method.application_template import Application
 from design_patterns.template_method.fahrenheit_celsius import number_from_input_stream
 
 
-class TemperatureConverter(Application):
+class ConverterTemplate(Application):
     def __init__(self):
         super().__init__()
 
@@ -22,6 +22,6 @@ class TemperatureConverter(Application):
         print("Fahrenheit to Celsius Finished!")
 
 
-if __name__ == '__main__':
-    converter = TemperatureConverter()
+if __name__ == '__main__':  # pragma: no cover
+    converter = ConverterTemplate()
     converter.run()
