@@ -9,3 +9,5 @@ test-reports
 coverage.xml
 htmlcov
 test-reports
+.scannerwork
+.pytest_cache
